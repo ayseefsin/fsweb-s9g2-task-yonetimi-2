@@ -16,7 +16,7 @@ const Task = ({ taskObj, onComplete }) => {
       <div className="deadline">
         son teslim:{" "}
         <span
-          style={{ backgroundColor: daysUntilDeadLine <= 0 ? `red` : `blue` }}
+          className={daysUntilDeadLine <= 3 ? `bg-[#ffd9d4]` : `bg-teal-200 `}
         >
           {formattedDeadline}
         </span>

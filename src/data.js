@@ -7,7 +7,7 @@ export const initialTasks = [
     description:
       "Bugün öğrendiklerimizden hangilerini projede kullanabiliriz, hangi kısımları mevcut bilgimizle yapabiliriz?",
     people: ["ömer", "emre"],
-    deadline: "2024-03-13",
+    deadline: "2024-03-18",
     status: "yapıldı",
   },
   {
@@ -25,7 +25,7 @@ export const initialTasks = [
     description:
       "Hangi adımdan başlasak daha iyi olur? Yapılacakları doğru sıraya koymaya çalışmak da bize fikir verebilir.",
     people: ["emre"],
-    deadline: "2024-03-15",
+    deadline: "2024-03-19",
     status: "yapılacak",
   },
   {
@@ -34,7 +34,7 @@ export const initialTasks = [
     description:
       "Unutma, en iyi öğretmen tecrübedir. Çok takılmadığın sürece konu tekrarı yapma. Sadece takıldığın yerleri araştır.",
     people: ["ömer", "emre"],
-    deadline: "2024-03-14",
+    deadline: "2024-03-15",
     status: "yapılacak",
   },
 ];
