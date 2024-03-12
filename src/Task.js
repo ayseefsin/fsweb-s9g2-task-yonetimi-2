@@ -1,16 +1,25 @@
 import React from "react";
-import { formatDistanceToNow } from "date-fns";
+import { formatDistanceToNow, differenceInDays } from "date-fns";
 import { tr } from "date-fns/locale";
 const Task = ({ taskObj, onComplete }) => {
   const formattedDeadline = formatDistanceToNow(new Date(taskObj.deadline), {
     locale: tr,
     addSuffix: true,
   });
+  const daysUntilDeadLine = differenceInDays(
+    new Date(taskObj.deadline),
+    new Date()
+  );
   return (
     <div className="task">
       <h3>{taskObj.title}</h3>
       <div className="deadline">
-        son teslim: <span>{formattedDeadline}</span>
+        son teslim:{" "}
+        <span
+          style={{ backgroundColor: daysUntilDeadLine <= 0 ? `red` : `blue` }}
+        >
+          {formattedDeadline}
+        </span>
       </div>
       <p>{taskObj.description}</p>
       <div>
